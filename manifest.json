@@ -1,10 +1,11 @@
 
 {
-  "id": "com.glucotrack.app",
+  "id": "com.glucotrack.app.v2",
   "name": "GlucoTrack: Smart Monitoring",
   "short_name": "GlucoTrack",
   "description": "Sophisticated blood glucose monitoring with AI-powered reminders and voice logging.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f8fafc",
   "theme_color": "#3b82f6",
@@ -51,17 +52,10 @@
   ],
   "shortcuts": [
     {
-      "name": "Log Glucose",
+      "name": "Quick Log",
       "short_name": "Log",
-      "description": "Quickly record your current glucose reading",
+      "description": "Record your current glucose reading",
       "url": "/?action=log",
-      "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "View Stats",
-      "short_name": "Stats",
-      "description": "Open your weekly progress overview",
-      "url": "/?action=stats",
       "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png", "sizes": "192x192" }]
     }
   ]
