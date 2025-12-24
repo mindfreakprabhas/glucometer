@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { GlucoseLog } from '../types';
+import { GlucoseLog } from '../types.ts';
 
 interface StatsOverviewProps {
   logs: GlucoseLog[];
@@ -41,7 +41,7 @@ const StatsOverview: React.FC<StatsOverviewProps> = ({ logs }) => {
               <p className="text-slate-400 text-[10px] font-bold uppercase tracking-widest mb-1">Time in Range</p>
               <div className="flex items-end gap-1">
                 <span className="text-xl font-bold text-emerald-600">{timeInRange}%</span>
-                <span className="text-[10px] text-slate-400 mb-1">Target: >70%</span>
+                <span className="text-[10px] text-slate-400 mb-1">Target: &gt;70%</span>
               </div>
             </div>
             <div className="p-3 bg-slate-50 rounded-2xl">
