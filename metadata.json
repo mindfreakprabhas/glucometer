@@ -1,0 +1,7 @@
+{
+  "name": "GlucoTrack Notification System",
+  "description": "A sophisticated blood glucose monitoring notification and reminder system featuring customizable daily routines, AI-powered supportive feedback, and Gemini Live voice integration.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
