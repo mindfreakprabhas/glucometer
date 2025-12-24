@@ -1,7 +1,62 @@
+
 {
-  "name": "GlucoTrack Notification System",
-  "description": "A sophisticated blood glucose monitoring notification and reminder system featuring customizable daily routines, AI-powered supportive feedback, and Gemini Live voice integration.",
-  "requestFramePermissions": [
-    "microphone"
+  "id": "com.glucotrack.app.v2",
+  "name": "GlucoTrack: Smart Monitoring",
+  "short_name": "GlucoTrack",
+  "description": "Sophisticated blood glucose monitoring with AI-powered reminders and voice logging.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait",
+  "categories": ["medical", "health", "lifestyle"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=1000",
+      "sizes": "1000x2000",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Mobile Dashboard"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&q=80&w=2000",
+      "sizes": "2000x1200",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Desktop Health Insights"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Quick Log",
+      "short_name": "Log",
+      "description": "Record your current glucose reading",
+      "url": "/?action=log",
+      "icons": [{ "src": "https://cdn-icons-png.flaticon.com/512/2966/2966486.png", "sizes": "192x192" }]
+    }
   ]
 }
