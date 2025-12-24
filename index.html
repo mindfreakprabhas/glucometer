@@ -1,12 +1,20 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlucoTrack Reminder System</title>
+  <title>GlucoTrack | Smart Glucose Monitoring</title>
+  <meta name="description" content="A sophisticated blood glucose monitoring notification and reminder system.">
   <meta name="theme-color" content="#3b82f6">
+  
+  <!-- PWA Requirements -->
   <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966486.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="GlucoTrack">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +42,9 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js').catch(err => console.log('SW registration failed:', err));
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('SW Registered', reg))
+          .catch(err => console.log('SW Registration failed:', err));
       });
     }
   </script>
